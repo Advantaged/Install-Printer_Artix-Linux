@@ -26,7 +26,7 @@ sudo rc-update add cupsd default
 ```
 - You can countercheck if successful with commands in **§ 2.**
 
-### 4. Check if "daemon-s" are already running (normally `avahi-daemon`) is it.
+### 4. Check if "daemon-s" are already running (normally `avahi-daemon` is it).
 ```
 rc-status | grep avahi-daemon
 
@@ -78,6 +78,5 @@ paru hl3152
 ### 8. Configure printer-s over `systemsettings` or `http://localhost:631`
 - System-Settings can be called different depending of your Desktop-Environment
 
-Thanks for your friendness @[alium], you can post this next time someone (like me) ask again.
 
 - [x] **Done & Enjoy !**
