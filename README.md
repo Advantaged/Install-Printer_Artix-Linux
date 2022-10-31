@@ -84,7 +84,30 @@ paru hl3152
 2. Ones the printer is added, you can `Configure` page-size, printing-quality, etc..
 3. Under menu `Maintenance` you can choose to print a test-page.
 #### 8.2. Configure Software-Printer (Virtual_PDF)
-* For this follow the instruction as for **§ 8.1.** but... either all printing come to `$HOME`, `$USER` or to `/var/spool/cups-pdf/<UserName>/`
-1. asd
+* For this follow the instruction as for **§ 8.1.** but... either all printing come to `$HOME` or `$USER` or to `/var/spool/cups-pdf/<UserName>/`
+* If by printig of test-page you cannot find the files under `$HOME` or `$USER` or you want all PDF-Printing come under `/home/<UserName>/PDF/` or elsewhere...
+1. Open whit an Editor `/etc/cups/cups-pdf.conf`, around line 42 you will find § `### Key: Out (config)`.
+2. At end of § add following line: `Out /home/tony/PDF/`
+**Note:** `tony` is an example of <UserName> and `PDF` an example of <FolderName>.
+* The whole § look like this:
+```
+### Key: Out (config)
+##  CUPS-PDF output directory 
+##  special qualifiers: 
+##     ${HOME} will be expanded to the user's home directory
+##     ${USER} will be expanded to the user name
+##  in case it is an NFS export make sure it is exported without
+##  root_squash! 
+### Default: /var/spool/cups-pdf/${USER}
+Out /home/tony/PDF/
+```
+* Don't forget to save/store the modified file in order to take effect
+3. In case you want to move/copy the already "printed" files, you can do it with the File-Manager, in case the copied file were in<br/>
+`/var/spool/cups-pdf/<UserName>/` and after copy you want to delete these... open Terminal and...:
+```
+cd /var/spool/cups-pdf/tony/
+
+sudo rm *.*
+```
 
 - [x] **Done & Enjoy !**
