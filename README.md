@@ -88,7 +88,7 @@ paru hl3152
 * If by printig of test-page you cannot find the files under `$HOME` or `$USER` or you want all PDF-Printing come under `/home/<UserName>/PDF/` or elsewhere...
 1. Open with an Editor `/etc/cups/cups-pdf.conf`, around line 42 you will find § `### Key: Out (config)`.
 2. At end of § add following line: `Out /home/tony/PDF/`
-**Note:** `tony` is an example of <UserName> and `PDF` an example of <FolderName>.
+**Note:** `tony` is an example of <<UserName>> and `PDF` an example of <<FolderName>>.
 * The whole § look like this:
 ```
 ### Key: Out (config)
