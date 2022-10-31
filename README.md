@@ -20,9 +20,9 @@ rc-update -v show | grep cupsd
 - In case one or both the services are not yet added>>
 
 ```
-sudo rc-update add avahi-daemon default
+rc-update add avahi-daemon default
 
-sudo rc-update add cupsd default
+rc-update add cupsd default
 ```
 - You can countercheck if successful with commands in **§ 2.**
 
@@ -44,9 +44,9 @@ rc-status --servicelist -s
 
 ### 5. If a "daemon" is not yet started, start service-s with: 
 ```
-sudo rc-service avahi-daemon start
+rc-service avahi-daemon start
 
-sudo rc-service cupsd start
+rc-service cupsd start
 ```
 - If all going well, recheck the status as in **§ 4.** shown.
 
@@ -76,7 +76,7 @@ paru hl3152
 - Your printer-name or -model can be different **!** 
 
 ### 8. Configure printer-s over `systemsettings` or `http://localhost:631`
-- System-Settings can be called different depending of your Desktop-Environment
+* System-Settings can be called different depending of your Desktop-Environment
 
 
 - [x] **Done & Enjoy !**
