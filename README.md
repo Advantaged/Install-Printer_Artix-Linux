@@ -78,7 +78,7 @@ paru hl3152
 
 ### 8. Configure printer-s over `systemsettings` or `http://localhost:631`
 * System-Settings can be called different depending of your Desktop-Environment.
-* I prefer to configure the printes over `systemsettings`. for people that prefer to manage printers over web-browser... insert `http://localhost:631` in your preferred (web-browser) application.
+* I prefer to configure the printes over `systemsettings`. For people that prefer to manage printers over web-browser... insert `http://localhost:631` in your preferred (web-browser) application.
 #### 8.1. Configure Hardware-Printer
 1. Open `systemsettings`/`Printers` and click on `Add Printer`, choose your printer and select/follow the recommendations.
 2. Ones the printer is added, you can `Configure` page-size, printing-quality, etc..
