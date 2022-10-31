@@ -86,7 +86,7 @@ paru hl3152
 #### 8.2. Configure Software-Printer (Virtual_PDF)
 * For this follow the instruction as for **§ 8.1.** but... either all printing come to `$HOME` or `$USER` or to `/var/spool/cups-pdf/<UserName>/`
 * If by printig of test-page you cannot find the files under `$HOME` or `$USER` or you want all PDF-Printing come under `/home/<UserName>/PDF/` or elsewhere...
-1. Open whit an Editor `/etc/cups/cups-pdf.conf`, around line 42 you will find § `### Key: Out (config)`.
+1. Open with an Editor `/etc/cups/cups-pdf.conf`, around line 42 you will find § `### Key: Out (config)`.
 2. At end of § add following line: `Out /home/tony/PDF/`
 **Note:** `tony` is an example of <UserName> and `PDF` an example of <FolderName>.
 * The whole § look like this:
